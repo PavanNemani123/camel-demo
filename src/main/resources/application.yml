@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: camel-demo
+
+---
+spring:
+  profiles:
+    active: dev
+sftp:
+  incoming: C:\\Users\\neman\\IdeaProjects\\file-processing\\incoming\\
+  backup: C:\\Users\\neman\\IdeaProjects\\file-processing\\backup\\
+
+---
+spring:
+  profiles:
+    active: staging
+sftp:
+  incoming: C://Users//neman//IdeaProjects//file-processing//incoming
+  backup: C://Users//neman//IdeaProjects//file-processing//backup
+
+---
+spring:
+  profiles:
+    active: pre-prod
+
+sftp:
+  incoming: C://Users//neman//IdeaProjects//file-processing//incoming
+  backup: C://Users//neman//IdeaProjects//file-processing//backup
